@@ -1,23 +1,18 @@
 #include <stdio.h>
+#include<string.h>
 
 int main() {
-    int n;
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
-    // Assume The max Numbers is 10000
-    int numbers[10000];
-    int sum = 0;
+    char str[100];
 
-    printf("Enter the elements:\n");
-    for (int i = 0; i < n; i++) {
-        printf("Element %d: ", i + 1);
-        scanf("%d", &numbers[i]);
-        sum += numbers[i];
+    printf("Enter a string: ");
+    gets(str);
+
+    int length = 0;
+    while (str[length] != '\0') {
+        length++;
     }
 
-    double average = (double)sum / n;
-
-    printf("The average is: %.2lf\n", average);
+    printf("Length of string: %d\n", length);
 
     return 0;
 }
