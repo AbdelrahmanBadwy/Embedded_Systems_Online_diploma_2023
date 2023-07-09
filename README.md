@@ -5,6 +5,9 @@ Welcome to the repository for Embedded_Systems_Online_deploma_2023! This Repo is
 ## Project Description
 The Embedded Systems Diploma project aims to showcase your understanding and application of embedded systems concepts and principles. The project involves designing, implementing, and testing a simple embedded system.
 
+## Credits
+
+This course was created by Keroles Shenouda.
 
 ## Contact
 
