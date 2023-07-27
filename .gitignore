@@ -1,5 +1,6 @@
 /.metadata/
 draft.c
+.exe
 draft.exe
 .vscode
 .gitignore
