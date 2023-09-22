@@ -33,7 +33,9 @@ typedef enum {
     
 }BUFFER_Status;
 
+BUFFER_Status LIFO_init(LIFO_BUF_t* buf, unsigned int* bufArr, unsigned int length );
 BUFFER_Status LIFO_isFull(LIFO_BUF_t* buf);
+BUFFER_Status LIFO_isEmpty(LIFO_BUF_t* buf);
 BUFFER_Status LIFO_add(LIFO_BUF_t* buf, unsigned int item);
 BUFFER_Status LIFO_pop(LIFO_BUF_t* buf, unsigned int* item);
 
