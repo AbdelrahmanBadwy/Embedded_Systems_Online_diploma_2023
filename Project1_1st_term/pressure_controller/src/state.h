@@ -1,0 +1,27 @@
+/*
+ ============================================================================
+ Name        : state.h
+ Author      : Abdelrahman_ElBadawy
+ Created on  : Oct 16, 2023
+ Version     : 1.0
+ Copyright   : Your copyright notice
+ Description : pressure_controller/state.h , Ansi-style
+ ============================================================================
+ */
+#ifndef STATE_H_
+#define STATE_H_
+
+#include<stdio.h>
+#include<stdlib.h>
+
+//state function definition generator
+#define STATE_DEFINE(_StateFunc_) void _##_StateFunc_##_()
+#define STATE(_StateFunc_) _##_StateFunc_##_
+
+//States Connections || Signals
+void sendPressureVal(int Pvalue);
+void Stop_alarm();
+void Start_alarm();
+int high_pressure_detected();
+
+#endif /* STATE_H_ */

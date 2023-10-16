@@ -1,0 +1,24 @@
+/*
+ ============================================================================
+ Name        : main.c
+ Author      : Abdelrahman_ElBadawy
+ Created on  : Oct 16, 2023
+ Version     : 1.0
+ Copyright   : Your copyright notice
+ Description : pressure_controller/main.c , Ansi-style
+ ============================================================================
+ */
+
+#include <stdint.h>
+#include <stdio.h>
+
+#include "driver.h"
+
+int main (){
+	GPIO_INITIALIZATION();
+	while (1)
+	{
+		//Implement your Design
+	}
+
+}

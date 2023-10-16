@@ -1,0 +1,14 @@
+20:15:08 **** Incremental Build of configuration Debug for project pressure_controller ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Alarm_Monitor.o" "..\\src\\Alarm_Monitor.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Main_Algo.o" "..\\src\\Main_Algo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pressure_sensor.o" "..\\src\\Pressure_sensor.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Alarm_actuator.o" "..\\src\\Alarm_actuator.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\driver.o" "..\\src\\driver.c" 
+gcc -o pressure_controller.exe "src\\Alarm_Monitor.o" "src\\Alarm_actuator.o" "src\\Main_Algo.o" "src\\Pressure_sensor.o" "src\\driver.o" "src\\main.o" 
+c:/users/abdal/downloads/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\main.o:D:\badawy\Embedded_deploma\Unit4_system_architect\Project1_1st_term\pressure_controller\Debug/../src/Pressure_sensor.h:23: multiple definition of `pressure_sensor_state_id'; src\Pressure_sensor.o:D:\badawy\Embedded_deploma\Unit4_system_architect\Project1_1st_term\pressure_controller\Debug/../src/Pressure_sensor.h:23: first defined here
+c:/users/abdal/downloads/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\main.o:D:\badawy\Embedded_deploma\Unit4_system_architect\Project1_1st_term\pressure_controller\Debug/../src/Main_Algo.h:24: multiple definition of `Main_Algo_state_id'; src\Main_Algo.o:D:\badawy\Embedded_deploma\Unit4_system_architect\Project1_1st_term\pressure_controller\Debug/../src/Main_Algo.h:24: first defined here
+c:/users/abdal/downloads/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\main.o:D:\badawy\Embedded_deploma\Unit4_system_architect\Project1_1st_term\pressure_controller\Debug/../src/Alarm_Monitor.h:22: multiple definition of `Alarm_Monitor_state_id'; src\Alarm_Monitor.o:D:\badawy\Embedded_deploma\Unit4_system_architect\Project1_1st_term\pressure_controller\Debug/../src/Alarm_Monitor.h:22: first defined here
+c:/users/abdal/downloads/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\main.o:D:\badawy\Embedded_deploma\Unit4_system_architect\Project1_1st_term\pressure_controller\Debug/../src/Alarm_actuator.h:24: multiple definition of `Alarm_actuator_state_id'; src\Alarm_actuator.o:D:\badawy\Embedded_deploma\Unit4_system_architect\Project1_1st_term\pressure_controller\Debug/../src/Alarm_actuator.h:24: first defined here
+collect2.exe: error: ld returned 1 exit status

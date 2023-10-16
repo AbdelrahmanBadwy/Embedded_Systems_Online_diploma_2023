@@ -1,0 +1,32 @@
+/*
+ ============================================================================
+ Name        : Alarm_actuator.c
+ Author      : Abdelrahman_ElBadawy
+ Created on  : Oct 16, 2023
+ Version     : 1.0
+ Copyright   : Your copyright notice
+ Description : pressure_controller/Alarm_actuator.c , Ansi-style
+ ============================================================================
+ */
+
+#include "Alarm_actuator.h"
+
+void (*pAlarm_actuator)();
+
+void Start_alarm(){
+	Set_Alarm_actuator(1);
+}
+
+void Stop_alarm(){
+	Set_Alarm_actuator(0);
+}
+
+STATE_DEFINE(Alarm_actuator_AlarmON){
+
+}
+STATE_DEFINE(Alarm_actuator_AlarmOFF){
+
+}
+STATE_DEFINE(Alarm_actuator_Waiting){
+
+}

@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+ Name        : Alarm_Monitor.c
+ Author      : Abdelrahman_ElBadawy
+ Created on  : Oct 16, 2023
+ Version     : 1.0
+ Copyright   : Your copyright notice
+ Description : pressure_controller/Alarm_Monitor.c , Ansi-style
+ ============================================================================
+ */
+
+#include "Alarm_Monitor.h"
+
+void (*pAlarm_Monitor)();
+
+int high_pressure_detected(){
+	pAlarm_Monitor=STATE(Alarm_Monitor_AlarmON);
+
+}
+
+STATE_DEFINE(Alarm_Monitor_AlarmON){
+
+}
+
+
+STATE_DEFINE(Alarm_Monitor_Waiting){
+
+}
