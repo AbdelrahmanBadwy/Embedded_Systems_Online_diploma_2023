@@ -13,7 +13,11 @@
 #include <stdio.h>
 #include <stdint.h>
 #define element_type uint8_t  // Define the type of elements in the FIFO as uint8_t
-
+#define DPRINTF(...)    {fflush(stdout); \
+						fflush(stdout); \
+						printf(__VA_ARGS__); \
+						fflush(stdout); \
+						fflush(stdout);}
 typedef struct {
     unsigned int length;     // Length of the FIFO buffer
     unsigned int count;      // Current count of elements in the FIFO
